@@ -47,8 +47,8 @@
 
   ユーザー名はbashまたはshellとかに表示されているはず `aaaaaa@bbbbb-MacBook-fugafuga:$`　の`aaaaaa`の部分
 
-   [!IMPORTANT]
-   <b>この変更を適用するためには再ログインが必要なので一度閉じて再度Ubuntuを起動</b>
+  > [!IMPORTANT]
+  > <b>この変更を適用するためには再ログインが必要なので一度閉じて再度Ubuntuを起動</b>
 
 ### 5.	gitインストール
     sudo apt-get install git
