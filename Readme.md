@@ -3,9 +3,9 @@
   
   Ubuntuインストールしたら基本的にUbuntuコンソールしか使わない（はず）
 
-  ## 環境
-  windows 11 or 10
-  Windows Terminal
+  ## 環境について
+  * windows 11 or 10
+  * Windows Terminal
 
 ## WSL2 / linux　(こっちを推奨)
 ### 1.	Docker Desktop for Windows のインストール
