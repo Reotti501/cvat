@@ -1,7 +1,7 @@
 # Computer Vision Annotation Tool (CVAT)のインストール、AIツール導入までの環境構築
   wsl2でcvatのインストールからAIツールの導入までの環境構築
   
-  Ubuntuインストールしたら基本的にUbuntuコンソールしか使わない（はず）
+  Ubuntuインストールしたら基本的にUbuntuコンソールしか使わない
 
   ## 環境について
   * windows 11 or 10
@@ -97,7 +97,7 @@
         restart: always
     （以下省略）
 
-  となっているので、<バージョン>のところに`1.13.0`と入力し、バージョン`1.13.0`のnuctlをインストール
+  となっているので、<バージョン>のところに`1.13.0`と入力し、バージョン`1.13.0`のnuctlをインストール   （※2024/06時点では`1.13.0`でした）
   
     sudo mv nuctl-<バージョン>-linux-amd64 /usr/local/bin/nuctl
     sudo chmod +x /usr/local/bin/nuctl
@@ -159,7 +159,11 @@ GPUを活用する場合	コマンドは通ってるみたいだけどよくわ�
 
 ### トラブルシューティング
 
-  7-1以降でコマンドを打った時にpermission denied while trying to connect to the Docker daemon soket at unix（略）が帰ってきてエラーになった場合、dockerで始まるコマンドに対してsudoをつける必要がある（再起動せずにそのまま行うとこの表示が出る）
+  7-1以降でコマンドを打った時に
+
+  `permission denied while trying to connect to the Docker daemon soket at unix ...`  （省略）
+
+  が帰ってきてエラーになった場合、dockerで始まるコマンドに対してsudoをつける必要がある（再起動せずにそのまま行うとこの表示が出る）
 
     sudo docker compose up -d
 
@@ -171,7 +175,6 @@ GPUを活用する場合	コマンドは通ってるみたいだけどよくわ�
   wsl初期化ミスったらこれで最初から
   
     wsl --unregister Ubuntu
-
 
 
 
@@ -210,6 +213,6 @@ GPUを活用する場合	コマンドは通ってるみたいだけどよくわ�
 ### 7. powershellを閉じる
 
 ### 8.	完成
-chromeで　http://localhost:8080/
+chromeで http://localhost:8080/
 にアクセスして、[6.	スーパーユーザー作成](#header28)
  で作ったユーザー名とパスワードを入れて通れば完了
